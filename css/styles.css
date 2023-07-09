@@ -1,0 +1,527 @@
+body, html {
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh
+}
+
+/* --- background parallax --- */
+#parallaxnaslovna{
+  background-image: url("../slike/naslovna.jpg");
+}
+
+#parallaxkolekcija{
+  background-image: url("../slike/babuh11.jpg");
+}
+
+#parallaxoprojektu{
+  background-image: url("../slike/babuh13.jpg");
+}
+
+#parallaxstudenti{
+  background-image: url("../slike/babuh15.jpg");
+}
+
+#parallax1{
+  background-image: url("../slike/babuh5.jpg");
+}
+
+#parallax2{
+  background-image: url("../slike/babuh6.png");
+}
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+/* --- background parallax --- */
+
+/* --- containers --- */
+.container#mainbox{
+  padding-top: 185px;
+  padding-bottom: 75px;
+}
+
+#naslovnacont{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  max-width: fit-content;
+}
+
+#kolekcijacont{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.levanaslovna{
+  background: rgba(0, 74, 117, 0.7);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin-left: 200px;
+  padding-left: 30px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.containerkolekcija{
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+footer{
+  width: 100%;
+  left: 0px;
+  margin-bottom: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+#maincontainer-1{
+  background: rgba(97, 171, 180, 0.85);  
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#maincontainer-2{
+  background: rgba(193, 168, 140, 0.80);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#maincontainer-kolekcija{
+  background: rgba(222,161,122, 0.8);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#maincontainer-oprojektu{
+  background: rgba(102,63,80, 0.8);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#maincontainer-studenti{
+  background: rgba(160,179,211, 0.8);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.main-content{
+  flex-grow: 1;
+}
+
+.main-container {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.container-v1{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+/* --- containers --- */
+
+/* --- carousel  --- */
+.carouselbox{
+  max-width: 450px;
+  margin-right: 200px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  margin-left: 85px;
+  object-fit: scale-down;
+}
+
+.carousel{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.carousel-item img {
+  height: 596.39px;
+  object-fit: cover;
+}
+/* --- carousel  --- */
+
+/* --- text boxes --- */
+.bigtextbox{
+  padding-top: 35px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* --- text boxes --- */
+
+/* --- texts --- */
+.navbarmaintekst{
+  font-family: "Lexend";
+  font-size: 22pt;
+  color: rgba(82, 77, 117);
+  transition: 0.5;
+}
+
+.navbarmaintekst:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-underline-offset: 6px;
+}
+
+.navbartekst{
+  align-items: right;
+  margin-right: 50px;
+}
+
+.navbartekst#staticnav{
+  margin-right: 100px;
+  padding-top: 20px;
+}
+
+.navbaruboxu{
+  font-family: "Lexend";
+  font-size: 26px;
+}
+
+.navbarboxutext{
+  color: rgba(82, 77, 117);
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+}
+
+.navbarboxutext:hover{
+  color: white;
+}
+
+h1.matininaslovi {
+  font-family: "Neonderthaw", sans-serif;
+  font-size: 110px;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  color: white;
+  text-shadow: black 5px 5px 10px;
+  line-height: 1;
+}
+
+h1#skolskaikona{
+  max-width: 800px;
+}
+
+h2#naslovna{
+  font-family: "Lexend";
+  font-size: 64px;
+  text-align: start;
+  color: rgba(0, 74, 117);
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  padding-bottom: 20px;
+}
+
+h2#kolekcijanaslov{
+  font-family: "Neonderthaw", "sans-serif";
+  font-size: 110px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  text-shadow: black 5px 5px 8px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+p.matastranice{
+  font-family: "Lexend";
+  font-size: 22px;
+  text-align: start;
+  color: white;
+}
+
+p.naslovna{
+ font-size: 26px;
+ text-align: start;
+ color: white;
+ font-family: "Lexend";
+}
+
+.mentori{
+  color: rgba(242,211,193);
+  text-decoration: underline;
+}
+
+.goofy{
+  color: rgba(242,211,193);
+}
+
+span.flowertext-purple{
+  color: rgba(82, 77, 117);
+}
+
+.likovi{
+  color: rgba(82, 77, 117);
+  text-decoration: underline;
+}
+
+.tab-pane{
+  transition: all 0.2s ease-in-out;
+}
+
+.footertext{
+  color: rgba(82, 77, 117);
+  display: inline;
+  font-family: "Lexend";
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.footertext#matijine{
+  color: rgba(82, 77, 117);
+}
+
+.linkovi-purple{
+  color: rgba(82, 77, 117);
+  font-weight: bold;
+}
+
+.linkovi-purple:hover{
+  color: rgba(134, 133, 147, 0.9); 
+  font-weight: bold; 
+}
+
+.linkovi-babyblue{
+  color: rgba(234,245,246);
+}
+
+.linkovi-babyblue:hover{
+  color: rgba(0, 74, 117); 
+}
+/* --- texts --- */
+
+/* --- images --- */
+.logofilfak{
+  width: 64px;
+  height: 64px;
+  margin-left:50px;
+}
+
+#logofilfaknaslovna{
+  width: 130px;
+  height: 130px;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+/* --- images --- */
+
+/* --- lists --- */
+li.inlinelist{
+  display: inline;
+  padding-inline: 10px;
+  text-align: center;
+}
+
+li.nav-item{
+  padding-inline: 15px;
+}
+/* --- lists --- */
+
+/* --- animactions --- */
+.navbarfixed {
+  animation: slideDown 1.5s;
+}
+
+.pulse{
+ animation: pulse
+}
+
+.blob{
+  transition: 500ms;
+}
+
+.blob:hover {
+	text-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(0.97);
+	transition: 0.5s all;
+}
+
+.fade-in{
+  animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.swup-transition-fade {
+  transition: 2s;
+  opacity: 1;
+}
+
+html.is-animating .swup-transition-fade {
+  opacity: 0;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -100px; /* --- Adjust this value based on your navbar height --- */
+  }
+  100% {
+    top: 0;
+  }
+}
+/* --- animactions --- */
+
+/* --- sass corrections --- */
+.nav-underline {
+  // scss-docs-start nav-underline-css-vars
+  --#{$prefix}nav-underline-gap: #{$nav-underline-gap};
+  --#{$prefix}nav-underline-border-width: #{$nav-underline-border-width};
+  --#{$prefix}nav-underline-link-active-color: #{$nav-underline-link-active-color};
+  // scss-docs-end nav-underline-css-vars
+
+  gap: var(--#{$prefix}nav-underline-gap);
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    border-bottom: var(--#{$prefix}nav-underline-border-width) solid transparent;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: currentcolor;
+    }
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    font-weight: $font-weight-bold;
+    color: white;
+    border-bottom-color: currentcolor;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+  }
+}
+/* --- sass corrections --- */
+
+/* --- right scroll to top button --- */
+#scroll-to-top {
+  display: none; 
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  border-collapse: collapse;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  opacity: 1;
+  
+}
+
+#scroll-to-top i {
+  font-size: 50px;
+  text-align: center;
+}
+/* --- right scroll to top button --- */
+
+/* --- cards --- */
+.card{
+  background: rgba(107, 91, 78);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-family: "Lexend";
+  font-size: 18px;
+  color: white;
+  padding: 1px;
+  transition: 0.5s;
+}
+
+.studentcards{
+  background: rgba(96,104,141);
+}
+
+.card:hover{
+transform: scale(1.01);
+transition: 500ms all;
+}
+
+.card-title{
+  padding-top: 10px;
+}
+/* --- cards --- */
+
+/* --- cards with animations --- */
+.filoloskislika{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 446.5px; 
+  transition: 0.3s all;
+}
+
+.filoloskislika:hover{
+  transform: scale(1.02);
+}
+
+.likovislika{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 396.5px; 
+  transition: 0.3s all;
+}
+
+.likovilika:hover{
+  transform: scale(1.02);
+}
+
+.karticafil{
+  width: 450px;
+  margin-left: 20px;
+  background: rgba(102,63,80);
+}
+
+.karticalikovi{
+  width: 400px;
+  margin-left: 20px;
+  background: rgba(82, 77, 117);
+}
+
+h5.titleodslike{
+  padding-bottom: 10px;
+  font-size: 26px;
+  position: absolute;
+  bottom: -10px;
+  justify-content: center;
+  left: 0px;
+  right: 0px;
+  text-shadow: black 5px 5px 10px;
+  opacity: 0;
+  transition: 0.5s all;
+  animation: fadeInAnimation2 ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation2 {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+   }
+}
+
+.karticafil:hover h5.titleodslike{
+  bottom: 0;
+  opacity: 1;
+  animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.karticalikovi:hover h5.titleodslike{
+  bottom: 0;
+  opacity: 1;
+  animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+/* --- cards with animations --- */
