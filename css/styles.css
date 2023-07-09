@@ -2,7 +2,8 @@ body, html {
   height: 100%;
   display: flex; 
   flex-direction: column; 
-  min-height: 100vh
+  min-height: 100vh;
+  font-size: 62.5%;
 }
 
 /* --- background parallax --- */
@@ -31,7 +32,7 @@ body, html {
 }
 
 .parallax {
-  height: 100%;
+  max-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,47 +43,51 @@ body, html {
 
 /* --- containers --- */
 .container#mainbox{
-  padding-top: 185px;
-  padding-bottom: 75px;
+  padding-top: 15rem;
+  padding-bottom: 7.5rem;
 }
 
 #naslovnacont{
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
   max-width: fit-content;
 }
 
 #kolekcijacont{
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .levanaslovna{
   background: rgba(0, 74, 117, 0.7);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  margin-left: 200px;
-  padding-left: 30px;
-  margin-top: 45px;
-  margin-bottom: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
+  min-width: 50%;
+  margin-left: 10vw;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+  max-height: fit-content;
 }
 
 .containerkolekcija{
-  padding-bottom: 60px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-bottom: 6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 footer{
   width: 100%;
   left: 0px;
   margin-bottom: 0px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.75);
+}
+
+.maincontainerall{
+  min-width: 70%;
 }
 
 #maincontainer-1{
@@ -114,50 +119,65 @@ footer{
   flex-grow: 1;
 }
 
+/*
 .main-container {
   margin-left: 200px;
   padding: 20px;
-}
+} */
 
 .container-v1{
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 /* --- containers --- */
 
 /* --- carousel  --- */
 .carouselbox{
-  max-width: 450px;
-  margin-right: 200px;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  margin-left: 85px;
+  max-width: 45%;
+  max-height: 60%;
+  height: fit-content;
+  margin-right: 10vw;
+  margin-left: 5vw;
   object-fit: scale-down;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (orientation: portrait){
+  .carouselbox{
+    margin-left: 10vw;
+  }
+  .levanaslovna{
+    margin-right: 10vw;
+  }
 }
 
 .carousel{
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: fit-content;
 }
 
 .carousel-item img {
-  height: 596.39px;
-  object-fit: cover;
+  max-height: 55rem;
+  max-width: 100%;
+  object-fit: contain;
+  
 }
 /* --- carousel  --- */
 
 /* --- text boxes --- */
 .bigtextbox{
-  padding-top: 35px;
-  padding-bottom: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 /* --- text boxes --- */
 
 /* --- texts --- */
 .navbarmaintekst{
   font-family: "Lexend";
-  font-size: 22pt;
+  font-size: 1.5vw;
   color: rgba(82, 77, 117);
   transition: 0.5;
 }
@@ -170,17 +190,17 @@ footer{
 
 .navbartekst{
   align-items: right;
-  margin-right: 50px;
+  margin-right: 5vw;
 }
 
 .navbartekst#staticnav{
-  margin-right: 100px;
-  padding-top: 20px;
+  margin-right: 5vw;
+  padding-top: 2rem;
 }
 
 .navbaruboxu{
   font-family: "Lexend";
-  font-size: 26px;
+  font-size: 1.5vw;
 }
 
 .navbarboxutext{
@@ -194,48 +214,48 @@ footer{
 
 h1.matininaslovi {
   font-family: "Neonderthaw", sans-serif;
-  font-size: 110px;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  font-size: 5.4vw;
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
   color: white;
   text-shadow: black 5px 5px 10px;
   line-height: 1;
 }
 
 h1#skolskaikona{
-  max-width: 800px;
+  max-width: 60%;
 }
 
 h2#naslovna{
   font-family: "Lexend";
-  font-size: 64px;
+  font-size: 3.5vw;
   text-align: start;
   color: rgba(0, 74, 117);
   font-weight: bold;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  padding-bottom: 20px;
+  text-shadow: -0.01em -0.01em 0 white, 0.01em -0.01em 0 white, -0.01em 0.01em 0 white, 0.01em 0.01em 0 white;
+  padding-bottom: 2rem;
 }
 
 h2#kolekcijanaslov{
   font-family: "Neonderthaw", "sans-serif";
-  font-size: 110px;
+  font-size: 5.4vw;
   text-align: center;
   color: white;
   font-weight: normal;
   text-shadow: black 5px 5px 8px;
-  padding-top: 35px;
-  padding-bottom: 50px;
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
 }
 
 p.matastranice{
   font-family: "Lexend";
-  font-size: 22px;
+  font-size: 1.4vw;
   text-align: start;
   color: white;
 }
 
 p.naslovna{
- font-size: 26px;
+ font-size: 1.4vw;
  text-align: start;
  color: white;
  font-family: "Lexend";
@@ -267,8 +287,8 @@ span.flowertext-purple{
   color: rgba(82, 77, 117);
   display: inline;
   font-family: "Lexend";
-  font-size: 18px;
-  padding-top: 15px;
+  font-size: 1vw;
+  padding-top: 1.5rem;
 }
 
 .footertext#matijine{
@@ -296,28 +316,28 @@ span.flowertext-purple{
 
 /* --- images --- */
 .logofilfak{
-  width: 64px;
-  height: 64px;
-  margin-left:50px;
+  width: 3.6vw;
+  height: 3.6vw;
+  margin-left:5vw;
 }
 
 #logofilfaknaslovna{
-  width: 130px;
-  height: 130px;
-  margin-left: 100px;
-  margin-top: 35px;
+  width: 6vw;
+  height: 6vw;
+  margin-left: 5vw;
+  margin-top: 2vw;
 }
 /* --- images --- */
 
 /* --- lists --- */
 li.inlinelist{
   display: inline;
-  padding-inline: 10px;
+  padding-inline: 0.5vw;
   text-align: center;
 }
 
 li.nav-item{
-  padding-inline: 15px;
+  padding-inline: 0.6vw;
 }
 /* --- lists --- */
 
@@ -366,7 +386,7 @@ html.is-animating .swup-transition-fade {
 
 @keyframes slideDown {
   0% {
-    top: -100px; /* --- Adjust this value based on your navbar height --- */
+    top: -7vh; /* --- Adjust this value based on your navbar height --- */
   }
   100% {
     top: 0;
@@ -400,7 +420,7 @@ html.is-animating .swup-transition-fade {
     font-weight: $font-weight-bold;
     color: white;
     border-bottom-color: currentcolor;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 0.05em 0.1em;
   }
 }
 /* --- sass corrections --- */
@@ -409,19 +429,16 @@ html.is-animating .swup-transition-fade {
 #scroll-to-top {
   display: none; 
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 10%;
+  right: 3vw;
   z-index: 99;
   border-collapse: collapse;
-  width: 100px;
-  height: 100px;
   text-align: center;
   opacity: 1;
-  
 }
 
 #scroll-to-top i {
-  font-size: 50px;
+  font-size: 3vw;
   text-align: center;
 }
 /* --- right scroll to top button --- */
@@ -431,7 +448,7 @@ html.is-animating .swup-transition-fade {
   background: rgba(107, 91, 78);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   font-family: "Lexend";
-  font-size: 18px;
+  font-size: 1.2vw;
   color: white;
   padding: 1px;
   transition: 0.5s;
@@ -447,14 +464,14 @@ transition: 500ms all;
 }
 
 .card-title{
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 /* --- cards --- */
 
 /* --- cards with animations --- */
 .filoloskislika{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  width: 446.5px; 
+  width: 100%; 
   transition: 0.3s all;
 }
 
@@ -464,7 +481,7 @@ transition: 500ms all;
 
 .likovislika{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  width: 396.5px; 
+  width: 100%; 
   transition: 0.3s all;
 }
 
@@ -473,13 +490,13 @@ transition: 500ms all;
 }
 
 .karticafil{
-  width: 450px;
-  margin-left: 20px;
+  width: 40%;
+  margin-left: 1.2vw;
   background: rgba(102,63,80);
 }
 
 .karticalikovi{
-  width: 400px;
+  width: 35%;
   margin-left: 20px;
   background: rgba(82, 77, 117);
 }
