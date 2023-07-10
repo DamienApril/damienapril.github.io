@@ -97,6 +97,8 @@ footer{
   left: 0px;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
   text-align: center;
   background: rgba(255, 255, 255, 0.75);
 }
@@ -254,13 +256,25 @@ h1.matininaslovi {
 
 @media all and (max-width: 768px){
   h1.matininaslovi{
-    font-size: 12em;}
+    font-size: 10em;}
   .navbaruboxu{
-    font-size: 2.2rem;
+    font-size: 2.8em;
   }
   .bigtextbox{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+
+
+@media all and (max-width: 768px){
+  .carousel-control-prev-icon{
+    display: none;
+  }
+
+  .carousel-control-next-icon{
+    display: none;
   }
 }
 
@@ -282,7 +296,7 @@ h2#naslovna{
 
 @media all and (max-width: 768px){
   h2#naslovna{
-    font-size: 5.5rem;
+    font-size: 10em;
     padding-top: 3vh;
     padding-bottom: 2vh;
   }
@@ -301,7 +315,7 @@ h2#kolekcijanaslov{
 
 @media all and (max-width:768px){
   h2#kolekcijanaslov{
-    font-size: 8.5rem;
+    font-size: 10em;
   }
 }
 
@@ -474,33 +488,16 @@ html.is-animating .swup-transition-fade {
 /* --- animactions --- */
 
 /* --- sass corrections --- */
-.nav-underline {
-  // scss-docs-start nav-underline-css-vars
-  --#{$prefix}nav-underline-gap: #{$nav-underline-gap};
-  --#{$prefix}nav-underline-border-width: #{$nav-underline-border-width};
-  --#{$prefix}nav-underline-link-active-color: #{$nav-underline-link-active-color};
-  // scss-docs-end nav-underline-css-vars
-
-  gap: var(--#{$prefix}nav-underline-gap);
-
-  .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-    border-bottom: var(--#{$prefix}nav-underline-border-width) solid transparent;
-
-    &:hover,
-    &:focus {
-      border-bottom-color: currentcolor;
-    }
-  }
-
-  .nav-link.active,
+.nav-link.active,
   .show > .nav-link {
-    font-weight: $font-weight-bold;
+    font-weight: bold;
     color: white;
     border-bottom-color: currentcolor;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 0.05em 0.1em;
+    
   }
+
+.nav-underline .nav-link.active{
+  color: white;
 }
 /* --- sass corrections --- */
 
@@ -624,11 +621,16 @@ h5.titleodslike{
 
   .naslovimalihslika{
     display: block;
+    padding: 0;
   }
   div.naslovimalihslika h5.card-title{
     font-size: 1.6rem;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
   }
 }
+
 
 @media all and (min-width: 769px){
   .naslovimalihslika{
