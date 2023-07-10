@@ -41,9 +41,10 @@ body, html {
   z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
-	#parallaxnaslovna {
-    
+@media screen and (min-width: 1921px) {
+	.parallax {
+    background-size: cover;
+    height: ;    
 	}
 }
 
@@ -79,6 +80,12 @@ body, html {
 margin-top: 12vh;
 }
 
+@media all and (max-width: 992px){
+  .containerisafixednaviznad{
+    margin-top: 2vh;
+  }
+}
+
 .containerkolekcija{
   padding-bottom: 3vh;
   padding-left: 3vw;
@@ -94,7 +101,7 @@ footer{
   background: rgba(255, 255, 255, 0.75);
 }
 
-@media all and (orientation: portrait){
+@media all and (max-width: 768px){
   footer{
     margin-top: 0;
   }
@@ -160,13 +167,6 @@ footer{
   margin-left: 0px;
 }
 
-@media all and (orientation: portrait){
-  .red{
-    
-    
-  }
-}
-
 .carousel{
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -174,39 +174,6 @@ footer{
 }
 
 
- /* .carouselbox{
-  max-width: 45%;
-  max-height: 60%;
-  flex: 1;
-  height: fit-content;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  object-fit: scale-down;
-  display: flex;
-  flex-wrap: wrap;
-}
-/*
-@media all and (orientation: portrait){
-  .carouselbox{
-    align-self: flex-end;
-  }
-  .levanaslovna{
-    
-  }
-}
-*/
-
-/*.carousel{
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  width: fit-content;
-}
-
-.carousel-item img {
-  max-height: 50vh;
-  max-width: 20vw; 
-  object-fit: cover;
-  
-}  */
 /* --- carousel  --- */
 
 /* --- text boxes --- */
@@ -226,20 +193,37 @@ footer{
   transition: 0.5;
 }
 
+@media all and (max-width: 992px){
+  .navbarmaintekst{
+    font-size: 1.8rem;
+    margin-left: 5vw;
+  }
+
+  .navbar-toggler{
+    margin-right: 7vw;
+  }
+
+  .navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+  }
+  
+} 
+
 .navbarmaintekst:hover{
   text-decoration: underline;
   text-decoration-color: black;
   text-underline-offset: 6px;
 }
 
-.navbartekst{
+.bartekst{
   align-items: right;
   margin-right: 5vw;
 }
 
 .navbartekst#staticnav{
   margin-right: 5vw;
-  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 .navbaruboxu{
@@ -251,7 +235,7 @@ footer{
 
 .navbarboxutext{
   color: rgba(82, 77, 117);
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
 }
 
 .navbarboxutext:hover{
@@ -268,7 +252,7 @@ h1.matininaslovi {
   line-height: 1;
 }
 
-@media all and (orientation: portrait){
+@media all and (max-width: 768px){
   h1.matininaslovi{
     font-size: 12em;}
   .navbaruboxu{
@@ -296,9 +280,11 @@ h2#naslovna{
   margin-bottom: 0;
 }
 
-@media all and (orientation: portrait){
+@media all and (max-width: 768px){
   h2#naslovna{
-    font-size: 6rem;
+    font-size: 5.5rem;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
   }
 }
 
@@ -313,11 +299,23 @@ h2#kolekcijanaslov{
   padding-bottom: 4vh;
 }
 
+@media all and (max-width:768px){
+  h2#kolekcijanaslov{
+    font-size: 8.5rem;
+  }
+}
+
 p.matastranice{
   font-family: "Lexend";
   font-size: 2.4rem;
   text-align: start;
   color: white;
+}
+
+@media all and (max-width: 768px){
+  p.matastranice{
+    font-size: 1.8rem;
+  }
 }
 
 p.naslovna{
@@ -328,9 +326,9 @@ p.naslovna{
  text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
 }
 
-@media all and (orientation: portrait){
+@media all and (max-width: 768px){
   p.naslovna{
-    font-size: 2.4rem
+    font-size: 1.8rem
   }
 }
 
@@ -390,14 +388,23 @@ span.flowertext-purple{
 .logofilfak{
   width: 7vh;
   height: 7vh;
-  margin-left:5vw;
+  margin-left:7vw;
 }
 
 #logofilfaknaslovna{
-  width: 6vw;
-  height: 6vw;
+  width: 12vh;
+  height: 12vh;
   margin-left: 5vw;
   margin-top: 2vw;
+}
+
+@media all and (max-width: 992px){
+  #logofilfaknaslovna{
+    height: 7vh;
+    width: 7vh;
+    margin-left: 7vw;
+    margin-top: 0px;
+  }
 }
 /* --- images --- */
 
@@ -414,7 +421,7 @@ li.nav-item{
 /* --- lists --- */
 
 /* --- animactions --- */
-.navbarfixed {
+nav.bg-light {
   animation: slideDown 1.5s;
 }
 
@@ -514,7 +521,7 @@ html.is-animating .swup-transition-fade {
   text-align: center;
 }
 
-@media all and (orientation: portrait){
+@media all and (max-width: 768px){
   #scroll-to-top i {
     font-size: 4rem;
   }
@@ -530,7 +537,7 @@ html.is-animating .swup-transition-fade {
 
 /* --- cards --- */
 .card{
-  background: rgba(107, 91, 78);
+  background: #27374D;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: "Lexend";
   font-size: 1.2vw;
@@ -543,7 +550,7 @@ h5.card-title{
 }
 
 .card#kolekcija{
-  background: rgba(107, 91, 78);
+  background: rgb(104, 90, 80);
 }
 
 .studentcards{
@@ -562,23 +569,15 @@ transition: 500ms all;
 
 /* --- cards with animations --- */
 .filoloskislika{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  
   width: 100%; 
   transition: 0.3s all;
-}
-
-.filoloskislika:hover{
-  transform: scale(1.02);
 }
 
 .likovislika{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  
   width: 100%; 
   transition: 0.3s all;
-}
-
-.likovilika:hover{
-  transform: scale(1.02);
 }
 
 .karticafil{
@@ -587,7 +586,7 @@ transition: 500ms all;
   background: rgba(102,63,80);
 }
 
-@media all and (orientation: portrait){
+@media all and (max-width: 768px){
   .karticafil{
     width: fit-content;
     margin-left: 0;
@@ -615,6 +614,26 @@ h5.titleodslike{
   animation: fadeInAnimation2 ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+@media all and (max-width: 768px){
+
+  div.card-img-overlay{
+    display: none;
+  }
+
+  .naslovimalihslika{
+    display: block;
+  }
+  div.naslovimalihslika h5.card-title{
+    font-size: 1.6rem;
+  }
+}
+
+@media all and (min-width: 769px){
+  .naslovimalihslika{
+    display: none;
+  }
 }
 
 @keyframes fadeInAnimation2 {
