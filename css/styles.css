@@ -7,6 +7,7 @@ body, html {
 }
 
 /* --- background parallax --- */
+
 #parallaxnaslovna{
   background-image: url("../slike/naslovna.jpg");
 }
@@ -39,14 +40,16 @@ body, html {
   background-size: cover;
   z-index: -1;
 }
+
+@media screen and (max-width: 768px) {
+	#parallaxnaslovna {
+    
+	}
+}
+
 /* --- background parallax --- */
 
 /* --- containers --- */
-.container#mainbox{
-  padding-top: 15rem;
-  padding-bottom: 7.5rem;
-}
-
 #naslovnacont{
   padding-top: 5rem;
   padding-bottom: 7rem;
@@ -61,29 +64,42 @@ body, html {
 .levanaslovna{
   background: rgba(0, 74, 117, 0.7);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  min-width: 50%;
+  /*min-width: 50%;*/
+  flex: 1;
   margin-left: 10vw;
   padding-left: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 3rem;
   max-height: fit-content;
+  min-width: 50%;
+}
+
+.containerisafixednaviznad{
+margin-top: 12vh;
 }
 
 .containerkolekcija{
-  padding-bottom: 6rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-bottom: 3vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 footer{
   width: 100%;
   left: 0px;
+  margin-top: 6vh;
   margin-bottom: 0px;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   text-align: center;
   background: rgba(255, 255, 255, 0.75);
+}
+
+@media all and (orientation: portrait){
+  footer{
+    margin-top: 0;
+  }
 }
 
 .maincontainerall{
@@ -110,6 +126,11 @@ footer{
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+#maincontainer-naslovna{
+  background: rgba(82, 109, 130, 0.8);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
 #maincontainer-studenti{
   background: rgba(160,179,211, 0.8);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -126,58 +147,82 @@ footer{
 } */
 
 .container-v1{
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3vh;
 }
 /* --- containers --- */
 
 /* --- carousel  --- */
-.carouselbox{
+
+.red{
+  min-width: 80%;
+  min-height: 300px;
+  display: flex;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@media all and (orientation: portrait){
+  .red{
+    
+    
+  }
+}
+
+.carousel{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+ /* .carouselbox{
   max-width: 45%;
   max-height: 60%;
+  flex: 1;
   height: fit-content;
-  margin-right: 10vw;
+  margin-right: 5vw;
   margin-left: 5vw;
   object-fit: scale-down;
   display: flex;
   flex-wrap: wrap;
 }
-
+/*
 @media all and (orientation: portrait){
   .carouselbox{
-    margin-left: 10vw;
+    align-self: flex-end;
   }
   .levanaslovna{
-    margin-right: 10vw;
+    
   }
 }
+*/
 
-.carousel{
+/*.carousel{
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: fit-content;
 }
 
 .carousel-item img {
-  max-height: 55rem;
-  max-width: 100%;
-  object-fit: contain;
+  max-height: 50vh;
+  max-width: 20vw; 
+  object-fit: cover;
   
-}
+}  */
 /* --- carousel  --- */
 
 /* --- text boxes --- */
 .bigtextbox{
-  padding-top: 3.5rem;
-  padding-bottom: 3rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 /* --- text boxes --- */
 
 /* --- texts --- */
 .navbarmaintekst{
   font-family: "Lexend";
-  font-size: 1.5vw;
+  font-size: 3vh;
   color: rgba(82, 77, 117);
   transition: 0.5;
 }
@@ -200,7 +245,9 @@ footer{
 
 .navbaruboxu{
   font-family: "Lexend";
-  font-size: 1.5vw;
+  font-size: 2.6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .navbarboxutext{
@@ -214,51 +261,78 @@ footer{
 
 h1.matininaslovi {
   font-family: "Neonderthaw", sans-serif;
-  font-size: 5.4vw;
-  padding-top: 4.5rem;
-  padding-bottom: 3.5rem;
+  font-size: 14em;
+  padding-top: 0.45em;
+  padding-bottom: 0.3em;
   color: white;
   text-shadow: black 5px 5px 10px;
   line-height: 1;
 }
 
+@media all and (orientation: portrait){
+  h1.matininaslovi{
+    font-size: 12em;}
+  .navbaruboxu{
+    font-size: 2.2rem;
+  }
+  .bigtextbox{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 h1#skolskaikona{
-  max-width: 60%;
+  max-width: 90%;
 }
 
 h2#naslovna{
   font-family: "Lexend";
-  font-size: 3.5vw;
-  text-align: start;
-  color: rgba(0, 74, 117);
+  font-size: 8rem;
+  text-align: center;
+  color: rgb(39, 55, 77);
   font-weight: bold;
   text-shadow: -0.01em -0.01em 0 white, 0.01em -0.01em 0 white, -0.01em 0.01em 0 white, 0.01em 0.01em 0 white;
-  padding-bottom: 2rem;
+  padding-bottom: 4vh;
+  padding-top: 4.5vh;
+  margin-bottom: 0;
+}
+
+@media all and (orientation: portrait){
+  h2#naslovna{
+    font-size: 6rem;
+  }
 }
 
 h2#kolekcijanaslov{
   font-family: "Neonderthaw", "sans-serif";
-  font-size: 5.4vw;
+  font-size: 14em;
   text-align: center;
   color: white;
   font-weight: normal;
   text-shadow: black 5px 5px 8px;
-  padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 p.matastranice{
   font-family: "Lexend";
-  font-size: 1.4vw;
+  font-size: 2.4rem;
   text-align: start;
   color: white;
 }
 
 p.naslovna{
- font-size: 1.4vw;
+ font-size: 3rem;
  text-align: start;
  color: white;
  font-family: "Lexend";
+ text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
+}
+
+@media all and (orientation: portrait){
+  p.naslovna{
+    font-size: 2.4rem
+  }
 }
 
 .mentori{
@@ -287,8 +361,7 @@ span.flowertext-purple{
   color: rgba(82, 77, 117);
   display: inline;
   font-family: "Lexend";
-  font-size: 1vw;
-  padding-top: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .footertext#matijine{
@@ -316,8 +389,8 @@ span.flowertext-purple{
 
 /* --- images --- */
 .logofilfak{
-  width: 3.6vw;
-  height: 3.6vw;
+  width: 7vh;
+  height: 7vh;
   margin-left:5vw;
 }
 
@@ -438,13 +511,25 @@ html.is-animating .swup-transition-fade {
 }
 
 #scroll-to-top i {
-  font-size: 3vw;
+  font-size: 5rem;
   text-align: center;
+}
+
+@media all and (orientation: portrait){
+  #scroll-to-top i {
+    font-size: 4rem;
+  }
+  #scroll-to-top {
+    margin: auto;
+    position: static;
+    padding: 2rem;
+
+  }
 }
 /* --- right scroll to top button --- */
 
 /* --- cards --- */
-.card{
+.card#kolekcija{
   background: rgba(107, 91, 78);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   font-family: "Lexend";
@@ -495,21 +580,29 @@ transition: 500ms all;
   background: rgba(102,63,80);
 }
 
+@media all and (orientation: portrait){
+  .karticafil{
+    width: fit-content;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .karticalikovi{
   width: 35%;
-  margin-left: 20px;
+  margin-left: 1.5vw;
   background: rgba(82, 77, 117);
 }
 
 h5.titleodslike{
-  padding-bottom: 10px;
-  font-size: 26px;
+  padding-bottom: 0.5em;
+  font-size: 3rem;
   position: absolute;
-  bottom: -10px;
+  bottom: -0.5em;
   justify-content: center;
   left: 0px;
   right: 0px;
-  text-shadow: black 5px 5px 10px;
+  text-shadow: 0.03em 0.06em 0.3em rgba(0,0,0,0.5);
   opacity: 0;
   transition: 0.5s all;
   animation: fadeInAnimation2 ease 1s;
@@ -542,3 +635,38 @@ h5.titleodslike{
     animation-fill-mode: forwards;
 }
 /* --- cards with animations --- */
+
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
