@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="../js/app.js"></script>
-    <script src="js/app.js"></script>
     <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script src="../js/fixedtopremover.js"></script>
     <script>
     const swup = new Swup();
     </script>
 </head>
   <body class="parallax swup-transition-fade" id="parallax2" id="swup" data-image-src="../slike/babuh6.png">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbarfixed">
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light navbarfixed">
       <a class="navbar-brand" href="../index.html"><img src="../slike/logo.png" class="logofilfak"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,9 +41,9 @@
         </ul>
       </div>
     </nav>
-    <div class="container text-center container-v1 fade-in main-content" id="mainbox">
+    <div class="container text-center container-v1 fade-in main-content containerisafixednaviznad">
       <div class="row">
-        <div class="col-11 mx-auto rounded" id="maincontainer-2">
+        <div class="col-11 mx-auto rounded maincontainerall" id="maincontainer-2">
           <h1 id="skolskaikona" class="mx-auto matininaslovi">Školska ikona u našem selu</h1>
           <nav>
             <div class="nav nav-underline nav-fill navbaruboxu" id="nav-tab" role="tablist">
@@ -95,6 +95,9 @@
               <a href="https://sr.wikipedia.org/wiki/%D0%9B%D0%B0%D0%B7%D0%B0_%D0%9A._%D0%9B%D0%B0%D0%B7%D0%B0%D1%80%D0%B5%D0%B2%D0%B8%D1%9B" target="_blank">
                 <div class="karticalikovi card float-end">
                   <img src="../slike/laza.jpg" class="card-img likovislika" alt="Laza Lazarević">
+                  <div class="card-body naslovimalihslika">
+                    <h5 class="card-title">Laza Lazarević</h5>
+                  </div>
                   <div class="card-img-overlay">
                     <h5 class="card-title titleodslike">Laza Lazarević</h5>
                   </div>

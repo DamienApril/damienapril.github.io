@@ -14,6 +14,7 @@
     <script>
     const swup = new Swup();
     </script>
+    <script src="js/bglightadder.js"></script>
 </head>
   <body class="parallax swup-transition-fade" id="swup" id="parallaxnaslovna" data-image-src="slike/naslovna.jpg">
     <main class="main-content">
@@ -42,52 +43,91 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid text-center fade-in main-content" id="naslovnacont">
+    <div class="container text-center container-v1 fade-in">
       <div class="row">
-        <div class="col justify-content-start levanaslovna rounded">
+        <div class="col-11 mx-auto rounded containerkolekcija maincontainerall" id="maincontainer-naslovna">
           <h2 id="naslovna">Srpska ELTeC kolekcija</h2>
           <p class="naslovna">Studenti smera Bibliotekarstvo i informatika sa stranim jezikom vam predstavljaju odabrane
             knjige na srpskom jeziku iz ELTeC kolekcije.</p>
+          <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="slike/pokojnikovazena.jpg" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="slike/skolskaikona.jpg"" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="slike/pokojnikovazena.jpg" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="slike/skolskaikona.jpg"" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="slike/pokojnikovazena.jpg" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="slike/skolskaikona.jpg"" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>          
           <p class="naslovna"><a href="https://www.distant-reading.net/eltec/" class="linkovi-babyblue" target="_blank">ELTeC</a> (European Literary Text Collection) je kolekcija korpusa književnih tekstova koja
             obuhvata tekstove na nekoliko evropskih jezika koji su međusobno uporedivi po svojoj prirodi, obimu i
             kvalitetu. Sama dostupnost ELTeC-a predstavlja ključni uslov za razvoj, evaluaciju i upotrebu višejezičnih
             alata i metoda analize književnih tekstova.</p>
-          <p class="naslovna">Eltek kolekcija danas broji preko 2000 publikacija izdatih u periodu od 1750 do 1920 godine
+          <p class="naslovna">ELTeC kolekcija danas broji preko 2000 publikacija izdatih u periodu od 1750 do 1920 godine
             na 21 različitih evropskih jezika.</p>
         </div>
-        <div class="carouselbox col justify-content-end">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="MatijaStojkovic/pokojnikovazena.html"><img src="slike/pokojnikovazena.jpg" class="d-block w-100 slikecarousel" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="MatijaStojkovic/skolskaikona.html"><img src="slike/skolskaikona.jpg" class="d-block w-100 slikecarousel" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="MatijaStojkovic/pokojnikovazena.html"><img src="slike/pokojnikovazena.jpg" class="d-block w-100 slikecarousel" alt="..."></a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
+      </div>
+    </div>
       </div>
     </main>
     <a href="#" id="scroll-to-top" class="blob btn btn-circle mx-auto"><i class="fa-solid fa-circle-chevron-up fade-in"
@@ -97,18 +137,12 @@
           <p class="footertext" style="color: rgba(0, 74, 117);">Generacija 2019</p>
         </div>
     </footer>
+    <script src="js/carouselthings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/scrollscript.js"></script>
-    <script src="https://kit.fontawesome.com/cc8cc44c69.js" crossorigin="anonymous"></script>
-    
-  
+    <script src="https://kit.fontawesome.com/cc8cc44c69.js" crossorigin="anonymous"></script>  
   </body>
 </html>
