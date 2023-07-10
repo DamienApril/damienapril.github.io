@@ -44,7 +44,7 @@ body, html {
 @media screen and (min-width: 1921px) {
 	.parallax {
     background-size: cover;
-    height: ;    
+    height: auto;    
 	}
 }
 
@@ -490,7 +490,7 @@ html.is-animating .swup-transition-fade {
 /* --- sass corrections --- */
 .nav-link.active,
   .show > .nav-link {
-    font-weight: bold;
+    font-weight: 500;
     color: white;
     border-bottom-color: currentcolor;
     
@@ -500,6 +500,10 @@ html.is-animating .swup-transition-fade {
   color: white;
 }
 /* --- sass corrections --- */
+
+.navbarfixni{
+  margin-right: 7vw;
+}
 
 /* --- right scroll to top button --- */
 #scroll-to-top {
