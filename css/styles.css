@@ -33,11 +33,11 @@ body, html {
 }
 
 .parallax {
-  max-height: 100%;
+  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
   z-index: -1;
 }
 
@@ -88,10 +88,8 @@ margin-top: 12vh;
 footer{
   width: 100%;
   left: 0px;
-  margin-top: 6vh;
-  margin-bottom: 0px;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.75);
 }
@@ -138,6 +136,7 @@ footer{
 
 .main-content{
   flex-grow: 1;
+  margin-bottom: 6rem;
 }
 
 /*
@@ -522,21 +521,29 @@ html.is-animating .swup-transition-fade {
   #scroll-to-top {
     margin: auto;
     position: static;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
 
   }
 }
 /* --- right scroll to top button --- */
 
 /* --- cards --- */
-.card#kolekcija{
+.card{
   background: rgba(107, 91, 78);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: "Lexend";
   font-size: 1.2vw;
   color: white;
-  padding: 1px;
   transition: 0.5s;
+}
+
+h5.card-title{
+  font-size: 1.7rem;
+}
+
+.card#kolekcija{
+  background: rgba(107, 91, 78);
 }
 
 .studentcards{
