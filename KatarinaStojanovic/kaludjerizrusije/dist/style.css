@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes|Ruthie|Mrs+Saint+Delafield);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  font-family: "Montserrat", arial, sans-serif;
+  color: #7F6855;
+}
+body h2, body h3, body h4 {
+  font-weight: 700;
+  margin-top: 0px;
+}
+body h2, body h3, body h4, body .date {
+  color: #544B49;
+}
+body h2 {
+  padding: 0.2em 0em;
+}
+body p {
+  line-height: 1.8em;
+}
+body a {
+  text-decoration: underline;
+  color: #a94442;
+}
+body a:hover, body a:focus, body a:visited {
+  color: #632B29;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.intro {
+  background-color: #F9F9F9;
+  display: table;
+  width: 100%;
+  background-image: url("https://d7hftxdivxxvm.cloudfront.net/?height=2000&quality=80&resize_to=fit&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FB9KXcr1U6H2kB58xXeVByg%252Fnew-leonardo-portrait-lead.jpg&width=2000");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  text-align: center;
+  background-position: 25% 20%;
+}
+.intro .intro-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-text h1 {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-size: 5em;
+  color: #403737;
+}
+@media screen and (min-width: 64em) {
+  .intro .intro-text h1 {
+    font-size: 8em;
+  }
+}
+
+.container {
+  padding: 2em 1em;
+}
+@media screen and (min-width: 50.9375em) {
+  .container {
+    padding: 2em 0;
+  }
+}
+.container h2 {
+  text-transform: uppercase;
+}
+.container .timeline .date-row {
+  padding: 1em 0.5em;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 43.75em) {
+  .container .timeline .date-row {
+    padding: 0em 0em;
+  }
+}
+.container .timeline .date-row .date {
+  font-size: 1.5em;
+}
+.container .external-links ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+.quote-leonardo {
+  text-align: center;
+  padding: 5%;
+  background-image: url("http://users.skynet.be/fa341830/fcc/imgs/davincibg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Mrs Saint Delafield", cursive;
+  font-size: 3em;
+  color: #403737;
+}
+@media screen and (min-width: 64em) {
+  .quote-leonardo {
+    font-size: 5em;
+  }
+}
