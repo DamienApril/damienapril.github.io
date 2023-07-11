@@ -1,39 +1,40 @@
-body, html {
+body,
+html {
   height: 100%;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   font-size: 62.5%;
 }
 
 /* --- background parallax --- */
 
-#parallaxnaslovna{
+#parallaxnaslovna {
   background-image: url("../slike/naslovna.jpg");
 }
 
-#parallaxkolekcija{
+#parallaxkolekcija {
   background-image: url("../slike/babuh11.jpg");
 }
 
-#parallaxoprojektu{
+#parallaxoprojektu {
   background-image: url("../slike/babuh13.jpg");
 }
 
-#parallaxstudenti{
+#parallaxstudenti {
   background-image: url("../slike/babuh15.jpg");
 }
 
-#parallax1{
+#parallax1 {
   background-image: url("../slike/babuh5.jpg");
 }
 
-#parallax2{
+#parallax2 {
   background-image: url("../slike/babuh6.png");
 }
 
 .parallax {
-  
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,30 +43,30 @@ body, html {
 }
 
 @media screen and (min-width: 1921px) {
-	.parallax {
+  .parallax {
     background-size: cover;
-    height: auto;    
-	}
+    height: auto;
+  }
 }
 
 /* --- background parallax --- */
 
 /* --- containers --- */
-#naslovnacont{
+
+#naslovnacont {
   padding-top: 5rem;
   padding-bottom: 7rem;
   max-width: fit-content;
 }
 
-#kolekcijacont{
+#kolekcijacont {
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
-.levanaslovna{
+.levanaslovna {
   background: rgba(0, 74, 117, 0.7);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  /*min-width: 50%;*/
   flex: 1;
   margin-left: 10vw;
   padding-left: 3rem;
@@ -76,23 +77,23 @@ body, html {
   min-width: 50%;
 }
 
-.containerisafixednaviznad{
-margin-top: 12vh;
+.containerisafixednaviznad {
+  margin-top: 12vh;
 }
 
-@media all and (max-width: 992px){
-  .containerisafixednaviznad{
+@media all and (max-width: 992px) {
+  .containerisafixednaviznad {
     margin-top: 2vh;
   }
 }
 
-.containerkolekcija{
+.containerkolekcija {
   padding-bottom: 3vh;
   padding-left: 3vw;
   padding-right: 3vw;
 }
 
-footer{
+footer {
   width: 100%;
   left: 0px;
   padding-top: 2rem;
@@ -103,144 +104,130 @@ footer{
   background: rgba(255, 255, 255, 0.75);
 }
 
-@media all and (max-width: 768px){
-  footer{
+@media all and (max-width: 768px) {
+  footer {
     margin-top: 0;
   }
 }
 
-.maincontainerall{
+.maincontainerall {
   min-width: 70%;
 }
 
-#maincontainer-1{
-  background: rgba(97, 171, 180, 0.85);  
+#maincontainer-1 {
+  background: rgba(97, 171, 180, 0.85);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-#maincontainer-2{
+#maincontainer-2 {
   background: rgba(193, 168, 140, 0.80);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-#maincontainer-kolekcija{
-  background: rgba(222,161,122, 0.8);
+#maincontainer-kolekcija {
+  background: rgba(222, 161, 122, 0.8);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-#maincontainer-oprojektu{
-  background: rgba(102,63,80, 0.8);
+#maincontainer-oprojektu {
+  background: rgba(102, 63, 80, 0.8);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-#maincontainer-naslovna{
+#maincontainer-naslovna {
   background: rgba(82, 109, 130, 0.8);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-#maincontainer-studenti{
-  background: rgba(160,179,211, 0.8);
+#maincontainer-studenti {
+  background: rgba(160, 179, 211, 0.8);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.main-content{
+.main-content {
   flex-grow: 1;
   margin-bottom: 6rem;
 }
 
-/*
-.main-container {
-  margin-left: 200px;
-  padding: 20px;
-} */
-
-.container-v1{
+.container-v1 {
   padding-top: 3vh;
 }
+
 /* --- containers --- */
 
 /* --- carousel  --- */
 
-.red{
-  min-width: 80%;
-  min-height: 300px;
-  display: flex;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-.carousel{
+.carousel {
   margin-top: 2vh;
   margin-bottom: 2vh;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-
 /* --- carousel  --- */
 
 /* --- text boxes --- */
-.bigtextbox{
+.bigtextbox {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   padding-left: 2vw;
   padding-right: 2vw;
 }
+
 /* --- text boxes --- */
 
 /* --- texts --- */
-.navbarmaintekst{
+.navbarmaintekst {
   font-family: "Lexend";
   font-size: 3vh;
   color: rgba(82, 77, 117);
   transition: 0.5;
 }
 
-@media all and (max-width: 992px){
-  .navbarmaintekst{
+@media all and (max-width: 992px) {
+  .navbarmaintekst {
     font-size: 1.8rem;
     margin-left: 5vw;
   }
 
-  .navbar-toggler{
+  .navbar-toggler {
     margin-right: 7vw;
   }
 
-  .navbar-toggler-icon{
+  .navbar-toggler-icon {
     width: 2em;
     height: 2em;
   }
-  
-} 
 
-.navbarmaintekst:hover{
+}
+
+.navbarmaintekst:hover {
   text-decoration: underline;
   text-decoration-color: black;
   text-underline-offset: 6px;
 }
 
-.bartekst{
-  align-items: right;
-  margin-right: 5vw;
-}
-
-.navbartekst#staticnav{
+.navbartekst#staticnav {
   margin-right: 5vw;
   margin-top: 2rem;
 }
 
-.navbaruboxu{
+.navbarfixni {
+  margin-right: 7vw;
+}
+
+.navbaruboxu {
   font-family: "Lexend";
   font-size: 2.6rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.navbarboxutext{
+.navbarboxutext {
   color: rgba(82, 77, 117);
   text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
 }
 
-.navbarboxutext:hover{
+.navbarboxutext:hover {
   color: white;
 }
 
@@ -254,35 +241,36 @@ h1.matininaslovi {
   line-height: 1;
 }
 
-@media all and (max-width: 768px){
-  h1.matininaslovi{
-    font-size: 10em;}
-  .navbaruboxu{
+@media all and (max-width: 768px) {
+  h1.matininaslovi {
+    font-size: 10em;
+  }
+
+  .navbaruboxu {
     font-size: 2.8em;
   }
-  .bigtextbox{
+
+  .bigtextbox {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
-
-
-@media all and (max-width: 768px){
-  .carousel-control-prev-icon{
+@media all and (max-width: 768px) {
+  .carousel-control-prev-icon {
     display: none;
   }
 
-  .carousel-control-next-icon{
+  .carousel-control-next-icon {
     display: none;
   }
 }
 
-h1#skolskaikona{
+h1#skolskaikona {
   max-width: 90%;
 }
 
-h2#naslovna{
+h2#naslovna {
   font-family: "Lexend";
   font-size: 8rem;
   text-align: center;
@@ -294,15 +282,15 @@ h2#naslovna{
   margin-bottom: 0;
 }
 
-@media all and (max-width: 768px){
-  h2#naslovna{
+@media all and (max-width: 768px) {
+  h2#naslovna {
     font-size: 10em;
     padding-top: 3vh;
     padding-bottom: 2vh;
   }
 }
 
-h2#kolekcijanaslov{
+h2#kolekcijanaslov {
   font-family: "Neonderthaw", "sans-serif";
   font-size: 14em;
   text-align: center;
@@ -313,125 +301,128 @@ h2#kolekcijanaslov{
   padding-bottom: 4vh;
 }
 
-@media all and (max-width:768px){
-  h2#kolekcijanaslov{
+@media all and (max-width:768px) {
+  h2#kolekcijanaslov {
     font-size: 10em;
   }
 }
 
-p.matastranice{
+p.matastranice {
   font-family: "Lexend";
   font-size: 2.4rem;
   text-align: start;
   color: white;
 }
 
-@media all and (max-width: 768px){
-  p.matastranice{
+@media all and (max-width: 768px) {
+  p.matastranice {
     font-size: 1.8rem;
   }
 }
 
-p.naslovna{
- font-size: 3rem;
- text-align: start;
- color: white;
- font-family: "Lexend";
- text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
+p.naslovna {
+  font-size: 3rem;
+  text-align: start;
+  color: white;
+  font-family: "Lexend";
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
 }
 
-@media all and (max-width: 768px){
-  p.naslovna{
+@media all and (max-width: 768px) {
+  p.naslovna {
     font-size: 1.8rem
   }
 }
 
-.mentori{
-  color: rgba(242,211,193);
+.mentori {
+  color: rgba(242, 211, 193);
   text-decoration: underline;
 }
 
-.goofy{
-  color: rgba(242,211,193);
+.goofy {
+  color: rgba(242, 211, 193);
 }
 
-span.flowertext-purple{
+span.flowertext-purple {
   color: rgba(82, 77, 117);
 }
 
-.likovi{
+.likovi {
   color: rgba(82, 77, 117);
   text-decoration: underline;
 }
 
-.tab-pane{
+.tab-pane {
   transition: all 0.2s ease-in-out;
 }
 
-.footertext{
+.footertext {
   color: rgba(82, 77, 117);
   display: inline;
   font-family: "Lexend";
   font-size: 1.4rem;
 }
 
-.footertext#matijine{
+.footertext#matijine {
   color: rgba(82, 77, 117);
 }
 
-.linkovi-purple{
+.linkovi-purple {
   color: rgba(82, 77, 117);
   font-weight: bold;
 }
 
-.linkovi-purple:hover{
-  color: rgba(134, 133, 147, 0.9); 
-  font-weight: bold; 
+.linkovi-purple:hover {
+  color: rgba(134, 133, 147, 0.9);
+  font-weight: bold;
 }
 
-.linkovi-babyblue{
-  color: rgba(234,245,246);
+.linkovi-babyblue {
+  color: rgba(234, 245, 246);
 }
 
-.linkovi-babyblue:hover{
-  color: rgba(0, 74, 117); 
+.linkovi-babyblue:hover {
+  color: rgba(0, 74, 117);
 }
+
 /* --- texts --- */
 
 /* --- images --- */
-.logofilfak{
+.logofilfak {
   width: 7vh;
   height: 7vh;
-  margin-left:7vw;
+  margin-left: 7vw;
 }
 
-#logofilfaknaslovna{
+#logofilfaknaslovna {
   width: 12vh;
   height: 12vh;
   margin-left: 5vw;
   margin-top: 2vw;
 }
 
-@media all and (max-width: 992px){
-  #logofilfaknaslovna{
+@media all and (max-width: 992px) {
+  #logofilfaknaslovna {
     height: 7vh;
     width: 7vh;
     margin-left: 7vw;
     margin-top: 0px;
   }
 }
+
 /* --- images --- */
 
 /* --- lists --- */
-li.inlinelist{
+li.inlinelist {
   display: inline;
   padding-inline: 0.5vw;
   text-align: center;
 }
 
-li.nav-item{
+li.nav-item {
   padding-inline: 0.6vw;
 }
+
 /* --- lists --- */
 
 /* --- animactions --- */
@@ -439,33 +430,34 @@ nav.bg-light {
   animation: slideDown 1.5s;
 }
 
-.pulse{
- animation: pulse
+.pulse {
+  animation: pulse
 }
 
-.blob{
+.blob {
   transition: 500ms;
 }
 
 .blob:hover {
-	text-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(0.97);
-	transition: 0.5s all;
+  text-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(0.97);
+  transition: 0.5s all;
 }
 
-.fade-in{
+.fade-in {
   animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .swup-transition-fade {
@@ -479,35 +471,35 @@ html.is-animating .swup-transition-fade {
 
 @keyframes slideDown {
   0% {
-    top: -7vh; /* --- Adjust this value based on your navbar height --- */
+    top: -7vh;
+    /* --- Adjust this value based on your navbar height --- */
   }
+
   100% {
     top: 0;
   }
 }
+
 /* --- animactions --- */
 
 /* --- sass corrections --- */
 .nav-link.active,
-  .show > .nav-link {
-    font-weight: 500;
-    color: white;
-    border-bottom-color: currentcolor;
-    
-  }
+.show>.nav-link {
+  font-weight: 500;
+  color: white;
+  border-bottom-color: currentcolor;
 
-.nav-underline .nav-link.active{
+}
+
+.nav-underline .nav-link.active {
   color: white;
 }
-/* --- sass corrections --- */
 
-.navbarfixni{
-  margin-right: 7vw;
-}
+/* --- sass corrections --- */
 
 /* --- right scroll to top button --- */
 #scroll-to-top {
-  display: none; 
+  display: none;
   position: fixed;
   bottom: 10%;
   right: 3vw;
@@ -522,10 +514,11 @@ html.is-animating .swup-transition-fade {
   text-align: center;
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
   #scroll-to-top i {
     font-size: 4rem;
   }
+
   #scroll-to-top {
     margin: auto;
     position: static;
@@ -534,10 +527,11 @@ html.is-animating .swup-transition-fade {
 
   }
 }
+
 /* --- right scroll to top button --- */
 
 /* --- cards --- */
-.card{
+.card {
   background: #27374D;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   font-family: "Lexend";
@@ -546,62 +540,63 @@ html.is-animating .swup-transition-fade {
   transition: 0.5s;
 }
 
-h5.card-title{
+h5.card-title {
   font-size: 1.7rem;
 }
 
-.card#kolekcija{
+.card#kolekcija {
   background: rgb(104, 90, 80);
 }
 
-.studentcards{
-  background: rgba(96,104,141);
+.studentcards {
+  background: rgba(96, 104, 141);
 }
 
-.card:hover{
-transform: scale(1.01);
-transition: 500ms all;
+.card:hover {
+  transform: scale(1.01);
+  transition: 500ms all;
 }
 
-.card-title{
+.card-title {
   padding-top: 0.5em;
 }
+
 /* --- cards --- */
 
 /* --- cards with animations --- */
-.filoloskislika{
-  
-  width: 100%; 
+.filoloskislika {
+
+  width: 100%;
   transition: 0.3s all;
 }
 
-.likovislika{
-  
-  width: 100%; 
+.likovislika {
+
+  width: 100%;
   transition: 0.3s all;
 }
 
-.karticafil{
+.karticafil {
   width: 40%;
   margin-left: 1.2vw;
-  background: rgba(102,63,80);
+  background: rgba(102, 63, 80);
 }
 
-@media all and (max-width: 768px){
-  .karticafil{
+@media all and (max-width: 768px) {
+  .karticafil {
     width: fit-content;
     margin-left: 0;
     margin-bottom: 2rem;
   }
 }
 
-.karticalikovi{
+.karticalikovi {
   width: 35%;
   margin-left: 1.5vw;
   background: rgba(82, 77, 117);
 }
 
-h5.titleodslike{
+h5.titleodslike {
   padding-bottom: 0.5em;
   font-size: 3rem;
   position: absolute;
@@ -609,25 +604,26 @@ h5.titleodslike{
   justify-content: center;
   left: 0px;
   right: 0px;
-  text-shadow: 0.03em 0.06em 0.3em rgba(0,0,0,0.5);
+  text-shadow: 0.03em 0.06em 0.3em rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: 0.5s all;
   animation: fadeInAnimation2 ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
 
-  div.card-img-overlay{
+  div.card-img-overlay {
     display: none;
   }
 
-  .naslovimalihslika{
+  .naslovimalihslika {
     display: block;
     padding: 0;
   }
-  div.naslovimalihslika h5.card-title{
+
+  div.naslovimalihslika h5.card-title {
     font-size: 1.6rem;
     padding-top: 0.3em;
     padding-left: 0.3em;
@@ -636,45 +632,49 @@ h5.titleodslike{
 }
 
 
-@media all and (min-width: 769px){
-  .naslovimalihslika{
+@media all and (min-width: 769px) {
+  .naslovimalihslika {
     display: none;
   }
 }
 
 @keyframes fadeInAnimation2 {
   0% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      opacity: 0;
-   }
+    opacity: 0;
+  }
 }
 
-.karticafil:hover h5.titleodslike{
+.karticafil:hover h5.titleodslike {
   bottom: 0;
   opacity: 1;
   animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.karticalikovi:hover h5.titleodslike{
+.karticalikovi:hover h5.titleodslike {
   bottom: 0;
   opacity: 1;
   animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
 /* --- cards with animations --- */
 
+/* --- carousel animations --- */
 
 @media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
-      display: none;
+  .carousel-inner .carousel-item>div {
+    display: none;
   }
-  .carousel-inner .carousel-item > div:first-child {
-      display: block;
+
+  .carousel-inner .carousel-item>div:first-child {
+    display: block;
   }
 }
 
@@ -686,19 +686,32 @@ h5.titleodslike{
 
 /* medium and up screens */
 @media (min-width: 768px) {
-  
+
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(25%);
   }
-  
-  .carousel-inner .carousel-item-start.active, 
+
+  .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%);
   }
 }
 
 .carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-transform: translateX(0);
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+/* --- carousel animations --- */
+
+/* --- animon item ubrzani transition --- */
+.animonItem {
+  transition: opacity .45s cubic-bezier(.5, 1, .89, 1) .3s, transform .45s cubic-bezier(.5, 1, .89, 1) .3s;
+}
+
+@media all and (max-width: 768px) {
+  .animonItem {
+    transition: opacity .2s cubic-bezier(.5, 1, .89, 1) .15s, transform .2s cubic-bezier(.5, 1, .89, 1) .15s;
+  }
 }
