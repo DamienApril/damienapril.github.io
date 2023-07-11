@@ -10,27 +10,27 @@ html {
 /* --- background parallax --- */
 
 #parallaxnaslovna {
-  background-image: url("../slike/naslovna.jpg");
+  background-image: url("../slike/backgroundi/naslovna.jpg");
 }
 
 #parallaxkolekcija {
-  background-image: url("../slike/babuh11.jpg");
+  background-image: url("../slike/backgroundi/babuh11.jpg");
 }
 
 #parallaxoprojektu {
-  background-image: url("../slike/babuh13.jpg");
+  background-image: url("../slike/backgroundi/babuh13.jpg");
 }
 
 #parallaxstudenti {
-  background-image: url("../slike/babuh15.jpg");
+  background-image: url("../slike/backgroundi/babuh15.jpg");
 }
 
 #parallax1 {
-  background-image: url("../slike/babuh5.jpg");
+  background-image: url("../slike/backgroundi/babuh5.jpg");
 }
 
 #parallax2 {
-  background-image: url("../slike/babuh6.png");
+  background-image: url("../slike/backgroundi/babuh6.png");
 }
 
 .parallax {
@@ -553,7 +553,12 @@ h5.card-title {
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(0.99);
+  transition: 500ms all;
+}
+
+.carouselkartice:hover {
+  transform: scale(0.98);
   transition: 500ms all;
 }
 
@@ -607,7 +612,7 @@ h5.titleodslike {
   text-shadow: 0.03em 0.06em 0.3em rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: 0.5s all;
-  animation: fadeInAnimation2 ease 1s;
+  animation: fadeInAnimation2 ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
