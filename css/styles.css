@@ -553,7 +553,12 @@ h5.card-title {
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(0.99);
+  transition: 500ms all;
+}
+
+.carouselkartice:hover {
+  transform: scale(0.98);
   transition: 500ms all;
 }
 
