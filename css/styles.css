@@ -494,6 +494,7 @@ html.is-animating .swup-transition-fade {
 .nav-underline .nav-link.active {
   color: white;
 }
+
 /* --- sass corrections --- */
 
 /* --- right scroll to top button --- */
@@ -703,3 +704,14 @@ h5.titleodslike {
 }
 
 /* --- carousel animations --- */
+
+/* --- animon item ubrzani transition --- */
+.animonItem {
+  transition: opacity .45s cubic-bezier(.5, 1, .89, 1) .3s, transform .45s cubic-bezier(.5, 1, .89, 1) .3s;
+}
+
+@media all and (max-width: 768px) {
+  .animonItem {
+    transition: opacity .2s cubic-bezier(.5, 1, .89, 1) .15s, transform .2s cubic-bezier(.5, 1, .89, 1) .15s;
+  }
+}
