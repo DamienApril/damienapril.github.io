@@ -292,7 +292,7 @@ h2#naslovna {
 
 h2#kolekcijanaslov {
   font-family: "Neonderthaw", "sans-serif";
-  font-size: 14em;
+  font-size: 12rem;
   text-align: center;
   color: white;
   font-weight: normal;
@@ -712,7 +712,7 @@ h5.titleodslike {
 
 /* --- animon item ubrzani transition --- */
 .animonItem {
-  transition: opacity .45s cubic-bezier(.5, 1, .89, 1) .3s, transform .45s cubic-bezier(.5, 1, .89, 1) .3s;
+  transition: opacity .4s cubic-bezier(.5, 1, .89, 1) .3s, transform .45s cubic-bezier(.5, 1, .89, 1) .3s;
 }
 
 @media all and (max-width: 768px) {
