@@ -343,6 +343,10 @@ p.naslovna {
   color: rgba(242, 211, 193);
 }
 
+.goofy:hover {
+  color: rgba(166,169,174,255);
+}
+
 span.flowertext-purple {
   color: rgba(82, 77, 117);
 }
@@ -369,16 +373,15 @@ span.flowertext-purple {
 
 .linkovi-purple {
   color: rgba(82, 77, 117);
-  font-weight: bold;
 }
 
 .linkovi-purple:hover {
-  color: rgba(134, 133, 147, 0.9);
+  color: rgba(104, 102, 114, 0.9);
   font-weight: bold;
 }
 
 .linkovi-babyblue {
-  color: rgba(234, 245, 246);
+  color: rgb(204, 238, 241);
 }
 
 .linkovi-babyblue:hover {
