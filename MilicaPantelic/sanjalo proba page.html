@@ -4,7 +4,7 @@
 <meta name="author" content="Milica Pantelić">
 <link rel="icon" href="book1.jpg" type="image/x-icon">
 
-<title>Сањало</title>
+<title>Sanjalo</title>
 <style>
 body {
     background-image: url("pozadina2.jpg");
@@ -15,13 +15,13 @@ body {
 h2 {
     text-align: center;
     text-transform: uppercase;
-    font-size: x-large;
-    font-family:'Sitka Heading';
+    font-size: xx-large;
+    font-family: 'Monotype corsiva';
 }
 
 h3 {
     text-align: center;
-    font-family:'Sitka Heading';
+    font-family: 'Monotype corsiva';
 }
 
 header {
@@ -89,7 +89,7 @@ background-color: antiquewhite;
 .jedan {
     border-style: solid;
     background-color: antiquewhite;
-    height: 145px;
+    height: 135px;
     margin-top: 20px;
     margin-left: 200px;
     margin-right: 200px;
@@ -104,7 +104,7 @@ background-color: antiquewhite;
 .dva {
     border-style: solid;
     background-color: antiquewhite;
-    height: 90px;
+    height: 75px;
     margin-top: 20px;
     margin-left: 200px;
     margin-right: 200px;
@@ -133,7 +133,7 @@ ul {
 .tri {
     border-style: solid;
     background-color: antiquewhite;
-    height: 300px;
+    height: 275px;
     margin-top: 20px;
     margin-left: 200px;
     margin-right: 200px;
@@ -144,10 +144,17 @@ ul {
 }
 
 .ime {
+    border-style: solid;
+    border-radius: 10px;
+    background-color: antiquewhite;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    margin-left: 520px;
+    margin-right: 520px;
 
 }
+
 
 hr {
     border-style: inherit;
@@ -167,21 +174,24 @@ display: flex;
 
 }
 
-#rom {
+#roman {
     font-size: larger;
     text-align: center;
+    font-family: Sitka Heading;
 
 }
 
 #likovi {
     font-size: larger;
     text-align: center;
+    font-family: Sitka Heading;
 
 }
 
 #aut {
     font-size: larger;
     text-align: center;
+    font-family: Sitka Heading;
 
 }
 
@@ -189,8 +199,10 @@ display: flex;
 #radnja {
     font-size: larger;
     text-align: center;
+    font-family: Sitka Heading;
 
 }
+
 
 
 a:link {
@@ -206,39 +218,40 @@ a:hover, a:active {
     color: brown;
 }
 
+
    </style> 
 
   </head>
   <body>
 <header>
     <br>
-    <h2>Сањало</h2>
-<h3>Милорад Поповић Шапчанин</h3>
+    <h2 id="naslovna">Sanjalo</h2>
+<h3>Milorad Popović Šapčanin</h3>
 </header>
 <br>
 
 <figure class="prvaslika">
-    <img src="sanjalo.jpg" alt="Слика корице књиге" title="Сањало" width="300" height="400"> 
-    <figcaption style="text-align: center;">Изглед књиге "Сањало"</figcaption>
+    <img src="sanjalo.jpg" alt="Slika korice knjige" title="Sanjalo" width="300" height="400"> 
+    <figcaption style="text-align: center;">Izgled knjige "Sanjalo"</figcaption>
     </figure>
 
 <figure class="drugaslika">
-    <img src="sapcanin.jpg" alt="Слика Милорада Поповића Шапчанина" title="Милорад Поповић Шапчанин" width="300" height="400" >
-    <figcaption style="text-align: center;">Милорад Поповић Шапчанин</figcaption>
+    <img src="sapcanin.jpg" alt="Slika Milorada Popovića Šapčanina" title="Milorad Popović Šapčanin" width="300" height="400" >
+    <figcaption style="text-align: center;"><a href="https://sr.wikipedia.org/sr-ec/%D0%9C%D0%B8%D0%BB%D0%BE%D1%80%D0%B0%D0%B4_%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2%D0%B8%D1%9B_%D0%A8%D0%B0%D0%BF%D1%87%D0%B0%D0%BD%D0%B8%D0%BD">Milorad Popović Šapčanin (Wikipedia)</a></figcaption>
 </figure>
 
 <br><br><br><br><br>
 
 <div id="one">
-        <button type="button" class="autor"><a href='#aut' class='slovo'>О АУТОРУ</a></button>    
-        <button type="button" class="roman"><a href='#roman' class='slovo'>О РОМАНУ</a></button> 
+        <button type="button" class="autor"><a href='#aut' class='slovo'>O AUTORU</a></button>    
+        <button type="button" class="roman"><a href='#roman' class='slovo'>O ROMANU</a></button> 
         
 </div> 
 <br><br>
 
 <div id="two">
-        <button type="button" class="characters"><a href='#likovi' class='slovo'>ЛИКОВИ</a></button> 
-        <button type="button" class="story"><a href='#radnja' class='slovo'>РАДЊА</a></button>
+        <button type="button" class="characters"><a href='#likovi' class='slovo'>LIKOVI</a></button> 
+        <button type="button" class="story"><a href='#radnja' class='slovo'>RADNJA</a></button>
 </div>
    
 <br><br><br><br><br><br>
@@ -247,47 +260,47 @@ a:hover, a:active {
 
 
 <div>
-    <h3 id="aut">О АУТОРУ</h3>
-    <p class="jedan"><strong>Mилорад Поповић Шапчанин</strong> је био српски књижевник, управник Народног позоришта и администатор
-        краљеве Цивилне листе и крунских добара. Рођен је 1841. године у Шапцу, у Иригу је завршио основну и немачку школу, а у Новом Саду
-        и Сремским Карловцима је завршио гимназију. Због смрти оца је морао да прекине школовање, па је 1864. завршио богословију. Постао је секретар
-        Министарства просвете, а 1880. постаје стални управник Народног позоришта. Писао је песме, драме и приповетке. Од песама су изашле збирке <em>Песме</em>,
-        и <em>Жубори и вихори</em>, за позориште је написао <em>Милош у Латинима</em> и драме <em>Богумили</em>, <em>Душан Силни</em> и <em>Задуџбина</em>.
-        <em>Сањало</em> се сматра једном од најбољих српских новела тог периода, која је истовремено одличан приказ тадашњег омладинског покрета. Преминуо је 1895. године у Београду.
+    <h3 id="aut">O AUTORU</h3>
+    <p class="jedan"><strong>Milorad Popović Šapčanin</strong> je bio srpski književnik, upravnik Narodnog pozorišta i administrator kraljeve Civilne liste
+        i krunskih dobara. Rođen je 1841. u Šapcu, u Irigu je završio osnovnu i nemačku školu, a u Novom Sadu i Sremskim Karlovcima je završio gimnaziju. Zbog smrti oca
+        je morao da prekine školovanje, pa je 1864. završio bogosloviju. Postao je sekretar Ministarstva prosvete, a 1880. postaje stalni poslanik Narodnog pozorišta. Pisao je pesme,
+        drame i pripovetke. Od pesama su izašle zbirke <em>Pesme</em> i <em>Žubori i vihori</em>, za pozorište je napisao <em>Miloš u Latinima</em> i drame <em>Bogumili</em>, <em>Dušan Silni</em>
+        i <em>Zadužbina</em>. <em>Sanjalo</em> se smatra jednom od najboljih srpskih novela tog perioda, koja je istovremeno odličan prikaz tadašnjeg omladinskog pokreta.
+        Preminuo je 1895. godine u Beogradu.
     </p>
     </div>
+
 
 <hr>
 
 <div>
-    <h3 id="roman">О РОМАНУ</h3>
+    <h3 id="roman">O ROMANU</h3>
     <p class="dva">
-<em><strong>Сањало</strong></em> прати развој, школовање и остваривање главног јунака Гргура Здравковића. Приказује се његово одрастање и стицање
-нових знања и искустава у селу, потом школовање у Београду, трудећи се да спозна сопствени идентитет. Описана је слика младих људи током 19. века, њихово учестовање У
-друштвеним и политичким догађајима, приказан је Београд из тог периода, као и сељаци, учитељи и свештеници. Линк ка књизи je <a href="https://distantreading.github.io/ELTeC/srp/SRP18880.html" style="color:blue ;">овде</a>.
-    </p>
-
+        <em><strong>Sanjalo</strong></em> prati razvoj, školovanje i ostvarivanje glavnog junaka Grgura Zdravkovića. Prikazuje se njegovo odrastanje i sticanje
+        novih znanja i iskustava u selu, potom školovanje u Beogradu, trudeći se da spozna sopstveni identitet. Opisana je slika mladih ljudi tokom 19. veka, njihovo učestvovanje u
+        društvenim i političkim događajima, prikazan je Beograd iz tog perioda, kao i seljaci, učenici i sveštenici. Link ka knjizi je <a href="https://distantreading.github.io/ELTeC/srp/SRP18880.html" style="color:blue ;">ovde</a>.
+            </p>
 </div>
 
 <hr>
 
     <div>
-        <h3 id="likovi">ЛИКОВИ</h3>
+        <h3 id="likovi">LIKOVI</h3>
         <div><ul>
-            <li><strong>Гргур (Киран) Здравковић</strong></li>
-            <li><strong>Учитељ Макса</strong></li>
-            <li><strong>Даница</strong></li>
-            <li><strong>Милан</strong></li>
-            <li><strong>Илија</strong></li>
-            <li><strong>Иван Здравковић</strong></li>
-            <li><strong>Петрија Здравковић</strong></li>
-            <li><strong>Мајстор Јован</strong></li>
-            <li><strong>Ружица</strong></li>
-            <li><strong>Паун</strong></li>
-            <li><strong>Црквењак Стеван</strong></li>
-            <li><strong>Професор Сава</strong></li>
-            <li><strong>Професор Тома</strong></li>
-            <li><strong>Јелена (Савина сестра)</strong></li>
+            <li><a href="https://www.wikidata.org/wiki/Q109923205"><strong>Grgur (Kiran) Zdravković</strong></a></li>
+            <li><strong>Učitelj Maksa</strong></li>
+            <li><strong>Danica</strong></li>
+            <li><strong>Milan</strong></li>
+            <li><strong>Ilija</strong></li>
+            <li><strong>Ivan Zdravković</strong></li>
+            <li><strong>Petrija Zdravković</strong></li>
+            <li><strong>Majstor Jovan</strong></li>
+            <li><strong>Ružica</strong></li>
+            <li><strong>Paun</strong></li>
+            <li><strong>Crkvenjak Stefan</strong></li>
+            <li><strong>Profesor Sava</strong></li>
+            <li><strong>Profesor Toma</strong></li>
+            <li><strong>Jelena (Savina sestra)</strong></li>
         </div>
         </ul>
         </p>
@@ -296,23 +309,25 @@ a:hover, a:active {
 <hr>
 
 <div>
-    <h3 id="radnja">РАДЊА</h3>
-<p class="tri">
-Прича почиње када Гргуров отац, који се зове Иван, одводи свог сина у школу која је далеко од њихове куће, у којој је главни учитељ Макса. Гргуру није било свеједно јер први пут
-спава ван свог топлог дома. Међутим, ни Иван није био емотивно јак, зато што је при повратку кући заплакао. Временом се Гргур навикао на школу, упознао је ново друштво, али
-особа која му је постала веома драга јесте Даница. Били су исто годиште и највише су се дружили. Школа се завршила, показали су своје знање и било је време да се одлучује 
-куда ићи даље. Иван и Петрија су седели и разговарали о томе шта би било најбоље за њихове синове. Донели су одлуку да Гргур иде у Београд на даље школовање, а Паун да остане са њима. 
-Гргур одлази за Београд са оцем и долазе код мајстора Јована, Ивановог старог познаника. Предлаже му да Гргур буде у њиховој кући док се школује, а Јован је прихватио ту одлуку и гледао
-је на Гргура као на сина. Поред Јована, Гргур је живео ту са Јовановом супругом Макреном и њиховом децом, Миланом и Ружицом. Размишљао је о Даници, а она му је једном послала и писмо.
-Завршили су гимнназију, прешли на Лицеј и дружили се са Илијом. Међутим, 1848. године почиње револуција и сви су побегли ка Сремским Карловцима. Гргур одлази у редове бораца Стевана Книћанина и у бици код Перлеза бива лакше рањен у ногу. Лежао је у болници, а у 
-посету му је дошао Илија, којег је замолио да оде у његово родно село и да пошаље поздраве својој породици и учитељу Макси. Илија је отишао са Миланом и пренео поздраве свима. 
-Затим је у јесен Гргур дошао у своје село, како би обишао своју породицу, а потом и школу. Посетио је учитеља Максу и Даницу, међутим сусрет са њом није био онакав какав је желела да буде. 
-Прича се завршава њеном удајом за Илију, који се заљубио оног момента када ју је угледао. 
-</p>
+    <h3 id="radnja">RADNJA</h3>
 
+<p class="tri">
+   Priča počinje kada Grgurov otac, koji se zove Ivan, odvodi svog sina u školu koja je daleko od njihove kuće, u kojoj je glavni učitelj Maksa. Grguru
+   nije bilo svejedno jer prvi put spava van svog toplog doma. Međutim, ni Ivan nije bio emotivno jak, zato što je pri povratku kući zaplakao. Vremenom se Grgur
+   navikao na školu, upoznao je novo društvo, ali osoba koja mu je postala veoma draga jeste Danica. Bili su isto godište i najviše su se družili. Škola se završila,
+   pokazali su svoje znanje i bilo je vreme da se odlučuje kuda ići dalje. Ivan i Petrija su sedeli i razgovarali o tome šta bi bilo najbolje za njihove sinove.
+   Doneli su odluku da Grgur ide u Beograd na dalje školovanje, a Paun da ostane sa njima. Grgur odlazi za Beograd sa ocem i dolaze kod majstora Jovava, Ivanovog starog poznanika.
+   Predlaže mu da Grgur bude u njihovoj kući dok se školuje, a Jovan je prihvatio tu odluku i gledao je na Grgura kao na sina. Pored Jovana, Grgur je živeo tu sa Jovanovom suprugom
+   Makrenom i njihovom decom, Milanom i Ružicom. Razmišljao je o Danici, a ona mu je jednom poslala i pismo. Završili su gimnaziju, prešli na Licej i družili se sa Ilijom. Međutim,
+   1848. godine počinje revolucija i svi su pobegli ka Sremskim Karlovcima. Grgur odlazi u redove boraca Stevana Knićanina i u bici kod Perleza biva lakše ranjen u nogu. Ležao je u bolnici,
+   a u posetu mu je došao Ilija, kojeg je zamolio da ode u njegovo rodno selo i da pošalje pozdrave svojoj porodici i učitelju Maksi. Ilija je otišao sa Milanom i preneo
+   pozdrave svima. Zatim je u jesen Grgur došao u svoje selo, kako bi obišao svoju porodicu, a potom i školu. Posetio je učitelja Maksu i Danicu, međutim susret sa njom nije bio onakav kakav je 
+   želela da bude. Priča se završava njenom udajom za Iliju, koji se zaljubio onog momenta kada ju je ugledao.
+   <a href="../index.html">Povratak na početnu.</a> <a href="literatura1.html">Literatura.</a>
+    </p>
 </div>
 
     </body>
 
-    <footer class="ime">Милица Пантелић 2019/0744</footer>
+    <footer class="ime">Milica Pantelić 2019/0744</footer>
 </html>
